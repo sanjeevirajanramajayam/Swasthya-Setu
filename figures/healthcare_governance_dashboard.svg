@@ -1,0 +1,236 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" height="100%" style="background:#090d16; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <defs>
+    <linearGradient id="govCardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="alertGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#f97316"/>
+    </linearGradient>
+    <linearGradient id="barGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+    <filter id="govGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Top App Navigation Bar -->
+  <rect x="0" y="0" width="1920" height="72" fill="#0d1527" stroke="#1e293b" stroke-width="1"/>
+  <circle cx="36" cy="36" r="16" fill="#0d9488"/>
+  <path d="M 28 36 L 44 36 M 36 28 L 36 44" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+  <text x="66" y="42" fill="#f8fafc" font-size="19" font-weight="700" letter-spacing="0.5">MINISTRY OF HEALTH &amp; FAMILY WELFARE • MIGRANT HEALTH GOVERNANCE</text>
+  <rect x="760" y="24" width="180" height="26" rx="6" fill="#0d9488" fill-opacity="0.2"/>
+  <text x="772" y="42" fill="#2dd4bf" font-size="12" font-weight="700">CENTRAL SURVEILLANCE NODE</text>
+
+  <!-- Realtime Clock & Admin Profile -->
+  <rect x="1540" y="16" width="340" height="42" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <circle cx="1565" cy="37" r="12" fill="#14b8a6"/>
+  <text x="1560" y="41" fill="#ffffff" font-size="12" font-weight="700">AD</text>
+  <text x="1588" y="34" fill="#f8fafc" font-size="13" font-weight="600">State Epidemiologist Desk</text>
+  <text x="1588" y="49" fill="#94a3b8" font-size="11">Inter-State Surveillance Bureau</text>
+
+  <!-- Sub Header / Title -->
+  <text x="40" y="115" fill="#ffffff" font-size="24" font-weight="800">Figure 4.5 – Healthcare Governance Dashboard</text>
+  <text x="40" y="140" fill="#94a3b8" font-size="14">Multi-state public health oversight, syndromic surveillance, outbreak cluster mitigation, and interstate migrant welfare analytics.</text>
+
+  <!-- Top Governance KPI Strip -->
+  <g transform="translate(40, 160)">
+    <!-- KPI 1 -->
+    <rect x="0" y="0" width="350" height="96" rx="12" fill="url(#govCardGrad)" stroke="#1e293b" stroke-width="1.5"/>
+    <text x="24" y="32" fill="#94a3b8" font-size="12" font-weight="700" text-transform="uppercase">Registered Migrant Workforce</text>
+    <text x="24" y="68" fill="#f8fafc" font-size="30" font-weight="800">1,482,920</text>
+    <text x="240" y="68" fill="#34d399" font-size="12" font-weight="700">↑ +14.2% YoY</text>
+    <text x="24" y="86" fill="#64748b" font-size="11">Active UMHID Smart Health Passes</text>
+
+    <!-- KPI 2 -->
+    <rect x="375" y="0" width="350" height="96" rx="12" fill="url(#govCardGrad)" stroke="#1e293b" stroke-width="1.5"/>
+    <text x="399" y="32" fill="#94a3b8" font-size="12" font-weight="700" text-transform="uppercase">Syndromic Outbreak Hotspots</text>
+    <text x="399" y="68" fill="#f87171" font-size="30" font-weight="800">7 Active</text>
+    <rect x="540" y="48" width="80" height="22" rx="4" fill="#ef4444" fill-opacity="0.2"/>
+    <text x="548" y="64" fill="#f87171" font-size="11" font-weight="700">● 2 CRITICAL</text>
+    <text x="399" y="86" fill="#64748b" font-size="11">Respiratory &amp; Vector-borne clusters</text>
+
+    <!-- KPI 3 -->
+    <rect x="750" y="0" width="350" height="96" rx="12" fill="url(#govCardGrad)" stroke="#1e293b" stroke-width="1.5"/>
+    <text x="774" y="32" fill="#94a3b8" font-size="12" font-weight="700" text-transform="uppercase">Federated Hospital Networks</text>
+    <text x="774" y="68" fill="#38bdf8" font-size="30" font-weight="800">142 Facilities</text>
+    <text x="960" y="68" fill="#34d399" font-size="12" font-weight="700">99.4% Sync</text>
+    <text x="774" y="86" fill="#64748b" font-size="11">Tier 1-3 District &amp; Empaneled</text>
+
+    <!-- KPI 4 -->
+    <rect x="1125" y="0" width="350" height="96" rx="12" fill="url(#govCardGrad)" stroke="#1e293b" stroke-width="1.5"/>
+    <text x="1149" y="32" fill="#94a3b8" font-size="12" font-weight="700" text-transform="uppercase">Inter-State Scheme Disbursal</text>
+    <text x="1149" y="68" fill="#fbbf24" font-size="30" font-weight="800">₹48.60 Cr</text>
+    <text x="1330" y="68" fill="#94a3b8" font-size="12">PM-JAY</text>
+    <text x="1149" y="86" fill="#64748b" font-size="11">Cross-Border Claim Settlement</text>
+
+    <!-- KPI 5: Broadcast Action Button -->
+    <rect x="1500" y="0" width="380" height="96" rx="12" fill="#0d9488" stroke="#14b8a6" stroke-width="1.5"/>
+    <text x="1530" y="42" fill="#ffffff" font-size="16" font-weight="800">+ BROADCAST RAPID ALERT</text>
+    <text x="1530" y="66" fill="#ccfbf1" font-size="12">Deploy Mobile Clinics &amp; Advisory SMS</text>
+    <text x="1530" y="84" fill="#99f6e4" font-size="11">Integrated with NDMA / State Disaster Cells</text>
+  </g>
+
+  <!-- Left Main Panel: Outbreak Geospatial Map & Disease Clusters -->
+  <g transform="translate(40, 280)">
+    <rect x="0" y="0" width="1080" height="760" rx="16" fill="url(#govCardGrad)" stroke="#1e293b" stroke-width="1.5"/>
+
+    <!-- Section Header -->
+    <text x="28" y="38" fill="#f8fafc" font-size="17" font-weight="700">Epidemiological Surveillance &amp; Migrant Cluster Heatmap</text>
+    <text x="28" y="58" fill="#64748b" font-size="12">Real-time syndromic incident reporting from multi-hospital emergency feeds &amp; industrial work sites.</text>
+
+    <!-- Map Canvas Area -->
+    <rect x="28" y="76" width="1024" height="420" rx="12" fill="#070b14" stroke="#1e293b" stroke-width="1"/>
+
+    <!-- Map Grid & State Polygons representation -->
+    <path d="M 120 180 L 260 120 L 400 150 L 520 110 L 680 140 L 760 220 L 640 380 L 480 440 L 300 420 L 160 300 Z" fill="#0f172a" stroke="#1e293b" stroke-width="2"/>
+    <path d="M 400 150 L 580 180 L 640 320 L 460 340 Z" fill="#131c31" stroke="#334155" stroke-width="1.5"/>
+    <path d="M 320 280 L 480 340 L 440 440 L 280 400 Z" fill="#172554" stroke="#1d4ed8" stroke-width="1.5"/>
+
+    <!-- Corridor Migration Arrows -->
+    <path d="M 680 170 Q 520 240 380 340" fill="none" stroke="#38bdf8" stroke-width="3" stroke-dasharray="6 4"/>
+    <path d="M 520 130 Q 420 220 340 370" fill="none" stroke="#2dd4bf" stroke-width="3" stroke-dasharray="6 4"/>
+
+    <!-- Cluster Hotspots with Pulsing Rings -->
+    <!-- Hotspot 1: Ernakulam Industrial Belt -->
+    <circle cx="350" cy="380" r="32" fill="#ef4444" fill-opacity="0.25"/>
+    <circle cx="350" cy="380" r="18" fill="#ef4444" fill-opacity="0.6"/>
+    <circle cx="350" cy="380" r="8" fill="#ef4444" stroke="#ffffff" stroke-width="2"/>
+    <rect x="365" y="340" width="220" height="54" rx="6" fill="#0f172a" stroke="#ef4444" stroke-width="1"/>
+    <text x="375" y="358" fill="#f87171" font-size="11" font-weight="700">Perumbavoor Cluster (High Alert)</text>
+    <text x="375" y="374" fill="#cbd5e1" font-size="10">Active: 42 Cases • Acute Bronchitis</text>
+    <text x="375" y="388" fill="#94a3b8" font-size="9">Exposed Workers: ~2,400 Plywood Mfg</text>
+
+    <!-- Hotspot 2: Pune Construction Corridor -->
+    <circle cx="430" cy="270" r="24" fill="#f59e0b" fill-opacity="0.3"/>
+    <circle cx="430" cy="270" r="7" fill="#f59e0b" stroke="#ffffff" stroke-width="2"/>
+    <rect x="445" y="240" width="180" height="42" rx="6" fill="#0f172a" stroke="#f59e0b" stroke-width="1"/>
+    <text x="455" y="258" fill="#fbbf24" font-size="11" font-weight="700">Hinjawadi Cluster</text>
+    <text x="455" y="274" fill="#94a3b8" font-size="10">Dengue Sentinel • 18 Cases</text>
+
+    <!-- Hotspot 3: Surat Textile Zone -->
+    <circle cx="380" cy="200" r="16" fill="#10b981" fill-opacity="0.3"/>
+    <circle cx="380" cy="200" r="6" fill="#10b981" stroke="#ffffff" stroke-width="1.5"/>
+
+    <!-- Map Legend -->
+    <rect x="45" y="430" width="310" height="50" rx="8" fill="#0b1120" stroke="#334155" stroke-width="1"/>
+    <circle cx="65" cy="455" r="6" fill="#ef4444"/>
+    <text x="78" y="459" fill="#e2e8f0" font-size="10" font-weight="600">Critical (&gt;30 Cases)</text>
+    <circle cx="165" cy="455" r="6" fill="#f59e0b"/>
+    <text x="178" y="459" fill="#e2e8f0" font-size="10" font-weight="600">Moderate (10-30)</text>
+    <circle cx="260" cy="455" r="6" fill="#10b981"/>
+    <text x="273" y="459" fill="#e2e8f0" font-size="10" font-weight="600">Controlled</text>
+
+    <!-- Bottom Breakdown: Disease Distribution Chart -->
+    <g transform="translate(28, 515)">
+      <text x="0" y="20" fill="#f8fafc" font-size="14" font-weight="700">Morbidity Distribution in Migrant Labor Cohorts (Current Quarter)</text>
+
+      <!-- Bar 1 -->
+      <text x="0" y="55" fill="#94a3b8" font-size="12">Occupational Respiratory (Silicosis/Asthma)</text>
+      <rect x="280" y="42" width="600" height="16" rx="4" fill="#1e293b"/>
+      <rect x="280" y="42" width="460" height="16" rx="4" fill="#0284c7"/>
+      <text x="750" y="55" fill="#f8fafc" font-size="11" font-weight="700">38.4% (5,680 cases)</text>
+
+      <!-- Bar 2 -->
+      <text x="0" y="90" fill="#94a3b8" font-size="12">Musculoskeletal &amp; Ergonomic Trauma</text>
+      <rect x="280" y="77" width="600" height="16" rx="4" fill="#1e293b"/>
+      <rect x="280" y="77" width="340" height="16" rx="4" fill="#0d9488"/>
+      <text x="630" y="90" fill="#f8fafc" font-size="11" font-weight="700">28.2% (4,170 cases)</text>
+
+      <!-- Bar 3 -->
+      <text x="0" y="125" fill="#94a3b8" font-size="12">Vector-Borne (Malaria / Dengue / Chikungunya)</text>
+      <rect x="280" y="112" width="600" height="16" rx="4" fill="#1e293b"/>
+      <rect x="280" y="112" width="220" height="16" rx="4" fill="#f59e0b"/>
+      <text x="510" y="125" fill="#f8fafc" font-size="11" font-weight="700">18.5% (2,735 cases)</text>
+
+      <!-- Bar 4 -->
+      <text x="0" y="160" fill="#94a3b8" font-size="12">Infectious Gastrointestinal &amp; Water-borne</text>
+      <rect x="280" y="147" width="600" height="16" rx="4" fill="#1e293b"/>
+      <rect x="280" y="147" width="180" height="16" rx="4" fill="#ef4444"/>
+      <text x="470" y="160" fill="#f8fafc" font-size="11" font-weight="700">14.9% (2,205 cases)</text>
+
+      <!-- Action Button -->
+      <rect x="0" y="180" width="260" height="38" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <text x="35" y="204" fill="#38bdf8" font-size="12" font-weight="700">Download Epidemiological Report (PDF)</text>
+    </g>
+  </g>
+
+  <!-- Right Side Panel: Governance Audit Trail & Policy Feed -->
+  <g transform="translate(1145, 280)">
+    <rect x="0" y="0" width="735" height="760" rx="16" fill="url(#govCardGrad)" stroke="#1e293b" stroke-width="1.5"/>
+
+    <!-- Panel Header -->
+    <text x="28" y="38" fill="#f8fafc" font-size="17" font-weight="700">Immutable Federated Audit Trail &amp; Policy Actions</text>
+    <text x="28" y="58" fill="#64748b" font-size="12">Tamper-evident cryptographic logs of inter-hospital EHR data requests and consent grants.</text>
+
+    <!-- Live Audit Stream Items -->
+    <g transform="translate(28, 76)">
+      <!-- Item 1 -->
+      <rect x="0" y="0" width="679" height="92" rx="10" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+      <rect x="16" y="16" width="36" height="36" rx="8" fill="#10b981" fill-opacity="0.2"/>
+      <text x="24" y="38" fill="#34d399" font-size="14" font-weight="700">✓</text>
+      <text x="64" y="28" fill="#38bdf8" font-size="11" font-weight="700">CROSS-STATE FHIR CONSENT UNLOCKED</text>
+      <text x="560" y="28" fill="#64748b" font-size="10">2 MINS AGO</text>
+      <text x="64" y="48" fill="#ffffff" font-size="12" font-weight="600">Patient: IND-MIG-2026-8841 (Ramesh Kumar) • ABHA OTP Verified</text>
+      <text x="64" y="68" fill="#94a3b8" font-size="11">Requesting Node: Ernakulam Med College ➔ Provider: Patna Dist Hosp</text>
+      <text x="64" y="82" fill="#64748b" font-size="10">SHA-256 Hash: 0x9b72f1c8340d... • Purpose: Emergency Triage</text>
+
+      <!-- Item 2 -->
+      <rect x="0" y="108" width="679" height="92" rx="10" fill="#0f172a" stroke="#ef4444" stroke-width="1"/>
+      <rect x="16" y="124" width="36" height="36" rx="8" fill="#ef4444" fill-opacity="0.2"/>
+      <text x="24" y="146" fill="#f87171" font-size="14" font-weight="700">⚠</text>
+      <text x="64" y="136" fill="#f87171" font-size="11" font-weight="700">OUTBREAK ALERT BROADCAST DISPATCHED</text>
+      <text x="560" y="136" fill="#64748b" font-size="10">14 MINS AGO</text>
+      <text x="64" y="156" fill="#ffffff" font-size="12" font-weight="600">Cluster: Perumbavoor Plywood Industrial Corridor (42 Cases)</text>
+      <text x="64" y="176" fill="#94a3b8" font-size="11">Intervention: 2 Mobile Medical Vans Deployed + N95 Mask Mandate</text>
+      <text x="64" y="190" fill="#64748b" font-size="10">Authorized by: Dr. S. Nambiar (State Surveillance Officer)</text>
+
+      <!-- Item 3 -->
+      <rect x="0" y="216" width="679" height="92" rx="10" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+      <rect x="16" y="232" width="36" height="36" rx="8" fill="#0284c7" fill-opacity="0.2"/>
+      <text x="24" y="254" fill="#38bdf8" font-size="14" font-weight="700">⇄</text>
+      <text x="64" y="244" fill="#38bdf8" font-size="11" font-weight="700">INTER-HOSPITAL BED REALLOCATION</text>
+      <text x="560" y="244" fill="#64748b" font-size="10">45 MINS AGO</text>
+      <text x="64" y="264" fill="#ffffff" font-size="12" font-weight="600">Transferred 8 Oxygen Beds to Ernakulam North Taluk Facility</text>
+      <text x="64" y="284" fill="#94a3b8" font-size="11">Surge Buffer Triggered: Migrant Intake spike (+28% in 48h)</text>
+      <text x="64" y="298" fill="#64748b" font-size="10">System Status: Balanced Occupancy across Zone 4</text>
+
+      <!-- Item 4 -->
+      <rect x="0" y="324" width="679" height="92" rx="10" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+      <rect x="16" y="340" width="36" height="36" rx="8" fill="#f59e0b" fill-opacity="0.2"/>
+      <text x="24" y="362" fill="#fbbf24" font-size="14" font-weight="700">₹</text>
+      <text x="64" y="352" fill="#fbbf24" font-size="11" font-weight="700">PM-JAY CROSS-BORDER CLAIM CLEARED</text>
+      <text x="560" y="352" fill="#64748b" font-size="10">1 HOUR AGO</text>
+      <text x="64" y="372" fill="#ffffff" font-size="12" font-weight="600">Claim ID: CLM-2026-90412 • Amount: ₹24,800</text>
+      <text x="64" y="392" fill="#94a3b8" font-size="11">Hospital: General Hospital Ernakulam | Beneficiary Domicile: Bihar</text>
+      <text x="64" y="406" fill="#64748b" font-size="10">Settlement Gateway: National Health Authority (Instant Auto-Adjudication)</text>
+    </g>
+
+    <!-- Rapid Response Governance Controls -->
+    <g transform="translate(28, 520)">
+      <rect x="0" y="0" width="679" height="190" rx="12" fill="#0a1222" stroke="#1e293b" stroke-width="1"/>
+      <text x="20" y="28" fill="#ffffff" font-size="14" font-weight="700">Governance Command &amp; Policy Directives</text>
+
+      <rect x="20" y="45" width="200" height="50" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <text x="35" y="68" fill="#38bdf8" font-size="12" font-weight="700">Mandate Health Camp</text>
+      <text x="35" y="84" fill="#94a3b8" font-size="10">Select High-Risk Wards</text>
+
+      <rect x="235" y="45" width="200" height="50" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <text x="250" y="68" fill="#f59e0b" font-size="12" font-weight="700">Dispatch Antimalarials</text>
+      <text x="250" y="84" fill="#94a3b8" font-size="10">Emergency Buffer Depots</text>
+
+      <rect x="450" y="45" width="205" height="50" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <text x="465" y="68" fill="#34d399" font-size="12" font-weight="700">Inter-State Sync Audit</text>
+      <text x="465" y="84" fill="#94a3b8" font-size="10">Validate FHIR Node Hashes</text>
+
+      <!-- Bottom Broadcast message preview -->
+      <rect x="20" y="110" width="635" height="60" rx="6" fill="#131c31" stroke="#1e293b" stroke-width="1"/>
+      <text x="35" y="132" fill="#94a3b8" font-size="11">ACTIVE GOVERNANCE ADVISORY (Multilingual Broadcast SMS):</text>
+      <text x="35" y="152" fill="#38bdf8" font-size="12" font-weight="600">"Free Health Screening &amp; Respirator Distribution camp at Perumbavoor Hub tomorrow 9 AM."</text>
+    </g>
+  </g>
+</svg>

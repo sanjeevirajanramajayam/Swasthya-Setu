@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Health Record &amp; Governance Platform – System Dashboard Figures</title>
+  <style>
+    :root {
+      --bg: #0b1120;
+      --card-bg: #1e293b;
+      --border: #334155;
+      --text: #f8fafc;
+      --muted: #94a3b8;
+      --teal: #14b8a6;
+      --blue: #0284c7;
+      --emerald: #10b981;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      padding: 32px 24px;
+      line-height: 1.5;
+    }
+    .header {
+      max-width: 1400px;
+      margin: 0 auto 36px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 24px;
+    }
+    .badge {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 9999px;
+      background: rgba(2, 132, 199, 0.2);
+      color: #38bdf8;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    h1 {
+      font-size: 26px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: #ffffff;
+      margin-bottom: 8px;
+    }
+    p.subhead {
+      color: var(--muted);
+      font-size: 14px;
+      max-width: 900px;
+    }
+    .nav-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    .tab-btn {
+      background: #1e293b;
+      border: 1px solid var(--border);
+      color: var(--muted);
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .tab-btn:hover, .tab-btn.active {
+      background: #0284c7;
+      color: #ffffff;
+      border-color: #38bdf8;
+      box-shadow: 0 4px 12px rgba(2, 132, 199, 0.3);
+    }
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 48px;
+    }
+    .figure-card {
+      background: #111827;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
+    }
+    .figure-header {
+      padding: 20px 24px;
+      background: #1e293b;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .figure-title {
+      font-size: 18px;
+      font-weight: 700;
+      color: #ffffff;
+    }
+    .figure-actions {
+      display: flex;
+      gap: 10px;
+    }
+    .btn {
+      padding: 6px 14px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+      border: 1px solid transparent;
+      transition: all 0.2s;
+    }
+    .btn-primary {
+      background: #0284c7;
+      color: #ffffff;
+    }
+    .btn-primary:hover { background: #0369a1; }
+    .btn-outline {
+      background: transparent;
+      border-color: var(--border);
+      color: var(--text);
+    }
+    .btn-outline:hover { background: #334155; }
+    .image-container {
+      width: 100%;
+      background: #000000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+    .image-container img, .image-container svg {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: contain;
+    }
+    .figure-caption {
+      padding: 20px 24px;
+      background: #0f172a;
+      border-top: 1px solid var(--border);
+      font-size: 13.5px;
+      color: #cbd5e1;
+    }
+    .figure-caption strong {
+      color: #38bdf8;
+    }
+    .details-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 16px;
+      margin-top: 14px;
+    }
+    .detail-pill {
+      background: #1e293b;
+      padding: 10px 14px;
+      border-radius: 8px;
+      border: 1px solid #334155;
+    }
+    .detail-pill-title {
+      font-size: 11px;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: var(--muted);
+      margin-bottom: 2px;
+    }
+    .detail-pill-desc {
+      font-size: 12.5px;
+      color: #f1f5f9;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <div class="badge">Technical Project Artifacts • Architecture Documentation</div>
+    <h1>A Scalable Cloud-Based Interoperable Digital Health Record, Appointment Management, and Healthcare Governance Platform for Migrant Workers Across Multi-Hospital Networks</h1>
+    <p class="subhead">Interactive high-resolution figure gallery showcasing all 6 primary system interfaces: patient intake, AI triage, regional network exchange, longitudinal care graphs, healthcare governance, and clinical consultations.</p>
+    
+    <div class="nav-tabs">
+      <a href="#fig41" class="tab-btn">Figure 4.1 Intake</a>
+      <a href="#fig42" class="tab-btn">Figure 4.2 Triage</a>
+      <a href="#fig43" class="tab-btn">Figure 4.3 Regional Network</a>
+      <a href="#fig44" class="tab-btn">Figure 4.4 Care Pathway Graph</a>
+      <a href="#fig45" class="tab-btn">Figure 4.5 Governance</a>
+      <a href="#fig46" class="tab-btn">Figure 4.6 Clinical Visits</a>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- Figure 4.1 -->
+    <section id="fig41" class="figure-card">
+      <div class="figure-header">
+        <h2 class="figure-title">Figure 4.1 – Migrant Worker Clinical Intake Interface</h2>
+        <div class="figure-actions">
+          <a href="Figure_4.1_Migrant_Worker_Clinical_Intake_Interface.jpg" target="_blank" class="btn btn-outline">Open Full Res</a>
+          <a href="Figure_4.1_Migrant_Worker_Clinical_Intake_Interface.jpg" download="Figure_4.1_Migrant_Worker_Clinical_Intake_Interface.jpg" class="btn btn-primary">Download Image</a>
+        </div>
+      </div>
+      <div class="image-container">
+        <img src="Figure_4.1_Migrant_Worker_Clinical_Intake_Interface.jpg" alt="Figure 4.1 – Migrant Worker Clinical Intake Interface" loading="lazy">
+      </div>
+      <div class="figure-caption">
+        <p><strong>Figure 4.1 Description:</strong> The Migrant Worker Clinical Intake Interface facilitates streamlined, multilingual registration and biometric enrollment for interstate migrant workers. It captures demographic identifiers, migration state corridors (Origin to Destination), occupational hazards (silica, ergonomic load, heat stress), live vital signs (BP, SpO2, Heart Rate, Temperature, BMI), and issues a verifiable FHIR R4 digital health pass with an encrypted QR code.</p>
+        <div class="details-grid">
+          <div class="detail-pill">
+            <div class="detail-pill-title">Interoperability</div>
+            <div class="detail-pill-desc">Generates Unique Migrant Health ID (UMHID) linked to ABHA &amp; FHIR R4 resources.</div>
+          </div>
+          <div class="detail-pill">
+            <div class="detail-pill-title">Occupational Health</div>
+            <div class="detail-pill-desc">Automated risk checklist for construction, masonry, and chemical exposure profiling.</div>
+          </div>
+          <div class="detail-pill">
+            <div class="detail-pill-title">Multilingual Support</div>
+            <div class="detail-pill-desc">Dynamic intake localized in Hindi, Malayalam, Bengali, and English.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Figure 4.2 -->
+    <section id="fig42" class="figure-card">
+      <div class="figure-header">
+        <h2 class="figure-title">Figure 4.2 – Clinical Triage Predictions and Hospital Recommendations</h2>
+        <div class="figure-actions">
+          <a href="Figure_4.2_Clinical_Triage_Predictions_and_Hospital_Recommendations.jpg" target="_blank" class="btn btn-outline">Open Full Res</a>
+          <a href="Figure_4.2_Clinical_Triage_Predictions_and_Hospital_Recommendations.jpg" download="Figure_4.2_Clinical_Triage_Predictions_and_Hospital_Recommendations.jpg" class="btn btn-primary">Download Image</a>
+        </div>
+      </div>
+      <div class="image-container">
+        <img src="Figure_4.2_Clinical_Triage_Predictions_and_Hospital_Recommendations.jpg" alt="Figure 4.2 – Clinical Triage Predictions and Hospital Recommendations" loading="lazy">
+      </div>
+      <div class="figure-caption">
+        <p><strong>Figure 4.2 Description:</strong> Clinical Decision Support System (CDSS) dashboard providing machine learning-powered triage stratification. The system analyzes incoming patient vitals, occupational hazards, and presenting complaints to predict clinical severity (Level 2 Urgent, 91% confidence), alongside multi-hospital network facility routing with real-time bed availability (ICU &amp; General), transit times, and immediate referral slot booking.</p>
+        <div class="details-grid">
+          <div class="detail-pill">
+            <div class="detail-pill-title">AI Severity Stratification</div>
+            <div class="detail-pill-desc">Four-tier urgency classifier with confidence scores and vital sign anomaly alerts.</div>
+          </div>
+          <div class="detail-pill">
+            <div class="detail-pill-title">Dynamic Bed Orchestration</div>
+            <div class="detail-pill-desc">Live occupancy telemetry across regional public and empaneled private hospitals.</div>
+          </div>
+          <div class="detail-pill">
+            <div class="detail-pill-title">Federated Referral Action</div>
+            <div class="detail-pill-desc">One-click emergency reservation and electronic health record transfer.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Figure 4.3 -->
+    <section id="fig43" class="figure-card">
+      <div class="figure-header">
+        <h2 class="figure-title">Figure 4.3 – Healthcare Portal and Regional Hospital Network</h2>
+        <div class="figure-actions">
+          <a href="Figure_4.3_Healthcare_Portal_and_Regional_Hospital_Network.jpg" target="_blank" class="btn btn-outline">Open Full Res</a>
+          <a href="Figure_4.3_Healthcare_Portal_and_Regional_Hospital_Network.jpg" download="Figure_4.3_Healthcare_Portal_and_Regional_Hospital_Network.jpg" class="btn btn-primary">Download Image</a>
+        </div>
+      </div>
+      <div class="image-container">
+        <img src="Figure_4.3_Healthcare_Portal_and_Regional_Hospital_Network.jpg" alt="Figure 4.3 – Healthcare Portal and Regional Hospital Network" loading="lazy">
+      </div>
+      <div class="figure-caption">
+        <p><strong>Figure 4.3 Description:</strong> The Regional Healthcare Authority Portal visualizing the multi-hospital network topology. Features an interactive geospatial graph of primary clinics, community health centers, and tertiary medical colleges connected through a FHIR R4 federated data mesh. Displays live patient referral streams, transit vectors, and regional capacity load metrics.</p>
+        <div class="details-grid">
+          <div class="detail-pill">
+            <div class="detail-pill-title">Mesh Telemetry</div>
+            <div class="detail-pill-desc">Monitors 14/14 connected hospital nodes with 99.9% uptime and zero data leakage.</div>
+          </div>
+          <div class="detail-pill">
+            <div class="detail-pill-title">Transit Vector Tracking</div>
+            <div class="detail-pill-desc">Real-time status tracking for emergency patient transfers across hospital corridors.</div>
+          </div>
+          <div class="detail-pill">
+            <div class="detail-pill-title">Network Utilization</div>
+            <div class="detail-pill-desc">Aggregated metrics on bed occupancy (1,850 beds), ICU reserves, and referral latency.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Figure 4.4 -->
+    <section id="fig44" class="figure-card">
+      <div class="figure-header">
+        <h2 class="figure-title">Figure 4.4 – Interactive Longitudinal Care Pathway Graph</h2>
+        <div class="figure-actions">
+          <a href="Figure_4.4_Interactive_Longitudinal_Care_Pathway_Graph.png" target="_blank" class="btn btn-outline">Open Full Res PNG</a>
+          <a href="Figure_4.4_Interactive_Longitudinal_Care_Pathway_Graph.png" download="Figure_4.4_Interactive_Longitudinal_Care_Pathway_Graph.png" class="btn btn-primary">Download Image</a>
+        </div>
+      </div>
+      <div class="image-container">
+        <img src="Figure_4.4_Interactive_Longitudinal_Care_Pathway_Graph.png" alt="Figure 4.4 – Interactive Longitudinal Care Pathway Graph" loading="lazy">
+      </div>
+      <div class="figure-caption">
+        <p><strong>Figure 4.4 Description:</strong> The Interactive Longitudinal Care Pathway Graph solves clinical record fragmentation for transient migrant workers. It chronologically maps encounters across multi-state hospital visits (Bihar, Maharashtra, Kerala) from 2023 to 2026, visualizing connected clinical diagnoses, vaccination events, multi-year biometric trajectories (BP &amp; SpO2 trends), and raw FHIR R4 JSON payloads.</p>
+        <div class="details-grid">
+          <div class="detail-pill">
+            <div class="detail-pill-title">Cross-State Care Continuity</div>
+            <div class="detail-pill-desc">Seamless aggregation of records across disparate state health departments.</div>
+          </div>
+          <div class="detail-pill">
+            <div class="detail-pill-title">Biometric Trajectory</div>
+            <div class="detail-pill-desc">Longitudinal vital signs tracking identifying chronic deterioration early.</div>
+          </div>
+          <div class="detail-pill">
+            <div class="detail-pill-title">FHIR R4 Interoperability</div>
+            <div class="detail-pill-desc">Direct export of cryptographic care pass bundles in XML and JSON formats.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Figure 4.5 -->
+    <section id="fig45" class="figure-card">
+      <div class="figure-header">
+        <h2 class="figure-title">Figure 4.5 – Healthcare Governance Dashboard</h2>
+        <div class="figure-actions">
+          <a href="Figure_4.5_Healthcare_Governance_Dashboard.png" target="_blank" class="btn btn-outline">Open Full Res PNG</a>
+          <a href="Figure_4.5_Healthcare_Governance_Dashboard.png" download="Figure_4.5_Healthcare_Governance_Dashboard.png" class="btn btn-primary">Download Image</a>
+        </div>
+      </div>
+      <div class="image-container">
+        <img src="Figure_4.5_Healthcare_Governance_Dashboard.png" alt="Figure 4.5 – Healthcare Governance Dashboard" loading="lazy">
+      </div>
+      <div class="figure-caption">
+        <p><strong>Figure 4.5 Description:</strong> Public health governance and epidemiological surveillance dashboard for state and national health authorities. Features syndromic outbreak geospatial heatmaps, migrant labor disease distribution analytics (respiratory, vector-borne, trauma), PM-JAY scheme cross-state financial settlement feeds, and an immutable cryptographic audit log of all electronic record access events.</p>
+        <div class="details-grid">
+          <div class="detail-pill">
+            <div class="detail-pill-title">Syndromic Early Warning</div>
+            <div class="detail-pill-desc">Automated detection of localized infectious disease clusters in industrial belts.</div>
+          </div>
+          <div class="detail-pill">
+            <div class="detail-pill-title">Rapid Alert Broadcasting</div>
+            <div class="detail-pill-desc">Direct multilingual SMS broadcast to at-risk migrant labor camps and mobile vans.</div>
+          </div>
+          <div class="detail-pill">
+            <div class="detail-pill-title">Immutable Audit Trail</div>
+            <div class="detail-pill-desc">SHA-256 hashed compliance logging ensuring privacy and data protection standards.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Figure 4.6 -->
+    <section id="fig46" class="figure-card">
+      <div class="figure-header">
+        <h2 class="figure-title">Figure 4.6 – Clinical Health Assessment and Hospital Visits</h2>
+        <div class="figure-actions">
+          <a href="Figure_4.6_Clinical_Health_Assessment_and_Hospital_Visits.png" target="_blank" class="btn btn-outline">Open Full Res PNG</a>
+          <a href="Figure_4.6_Clinical_Health_Assessment_and_Hospital_Visits.png" download="Figure_4.6_Clinical_Health_Assessment_and_Hospital_Visits.png" class="btn btn-primary">Download Image</a>
+        </div>
+      </div>
+      <div class="image-container">
+        <img src="Figure_4.6_Clinical_Health_Assessment_and_Hospital_Visits.png" alt="Figure 4.6 – Clinical Health Assessment and Hospital Visits" loading="lazy">
+      </div>
+      <div class="figure-caption">
+        <p><strong>Figure 4.6 Description:</strong> The Clinician Encounter Workstation used by attending physicians during outpatient consultations. Displays patient verification with biometric consent status, previous multi-hospital encounter cards with diagnoses, comprehensive objective physical exam findings (systemic auscultation, vitals), ICD-11 coded working diagnoses, e-prescribing with government dispensary links, and cryptographic digital signatures.</p>
+        <div class="details-grid">
+          <div class="detail-pill">
+            <div class="detail-pill-title">Longitudinal Context</div>
+            <div class="detail-pill-desc">Instant access to prior encounter notes from origin state clinics during intake.</div>
+          </div>
+          <div class="detail-pill">
+            <div class="detail-pill-title">Coded Diagnostics</div>
+            <div class="detail-pill-desc">ICD-11 standard codes for reactive airway disorders and occupational hazards.</div>
+          </div>
+          <div class="detail-pill">
+            <div class="detail-pill-title">Cryptographic e-Sign</div>
+            <div class="detail-pill-desc">e-Mudhra certified digital signature securing prescriptions and clinical summaries.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</body>
+</html>

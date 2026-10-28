@@ -1,0 +1,290 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" height="100%" style="background:#090d16; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <defs>
+    <linearGradient id="docCardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="accentCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <linearGradient id="saveBtnGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Top App Navigation Bar -->
+  <rect x="0" y="0" width="1920" height="72" fill="#0d1527" stroke="#1e293b" stroke-width="1"/>
+  <circle cx="36" cy="36" r="16" fill="#0284c7"/>
+  <path d="M 28 36 L 44 36 M 36 28 L 36 44" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+  <text x="66" y="42" fill="#f8fafc" font-size="19" font-weight="700" letter-spacing="0.5">NATIONAL MIGRANT HEALTH RECORD SYSTEM • CLINICIAN WORKSTATION</text>
+  <rect x="740" y="24" width="150" height="26" rx="6" fill="#0369a1" fill-opacity="0.25"/>
+  <text x="752" y="42" fill="#38bdf8" font-size="12" font-weight="700">DOCTOR ENCOUNTER DESK</text>
+
+  <!-- Doctor Profile Context -->
+  <rect x="1500" y="16" width="380" height="42" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <circle cx="1525" cy="37" r="12" fill="#38bdf8"/>
+  <text x="1520" y="41" fill="#ffffff" font-size="11" font-weight="700">DR</text>
+  <text x="1548" y="34" fill="#f8fafc" font-size="13" font-weight="600">Dr. Ananya Nair, MD (Pulmonology)</text>
+  <text x="1548" y="49" fill="#94a3b8" font-size="11">Govt Medical College Hospital • Reg: KMC-44812</text>
+
+  <!-- Sub Header / Title -->
+  <text x="40" y="115" fill="#ffffff" font-size="24" font-weight="800">Figure 4.6 – Clinical Health Assessment and Hospital Visits</text>
+  <text x="40" y="140" fill="#94a3b8" font-size="14">Comprehensive electronic encounter documentation, physical exam findings, multi-hospital past encounter history, and e-prescribing with cross-state interoperability.</text>
+
+  <!-- Patient Summary Banner -->
+  <g transform="translate(40, 160)">
+    <rect x="0" y="0" width="1840" height="84" rx="12" fill="url(#docCardGrad)" stroke="#1e293b" stroke-width="1.5"/>
+
+    <!-- Worker Avatar & Basic Info -->
+    <circle cx="45" cy="42" r="24" fill="#334155" stroke="#38bdf8" stroke-width="2"/>
+    <text x="36" y="47" fill="#ffffff" font-size="15" font-weight="700">RK</text>
+    <text x="82" y="36" fill="#ffffff" font-size="16" font-weight="700">Ramesh Kumar</text>
+    <text x="82" y="56" fill="#94a3b8" font-size="12">34 Yrs • Male • Construction Laborer • Native: Gopalganj, Bihar</text>
+
+    <!-- UMHID & Health Card Tag -->
+    <rect x="420" y="24" width="230" height="36" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <text x="435" y="46" fill="#94a3b8" font-size="11">UMHID:</text>
+    <text x="490" y="47" fill="#38bdf8" font-size="13" font-weight="700">IND-MIG-2026-8841</text>
+
+    <!-- Language & Translator Assist -->
+    <rect x="670" y="24" width="170" height="36" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <text x="685" y="46" fill="#f59e0b" font-size="11" font-weight="700">🗣 Hindi / Bhojpuri</text>
+    <text x="800" y="46" fill="#34d399" font-size="11">● Active</text>
+
+    <!-- ABHA Consent Badge -->
+    <rect x="860" y="24" width="220" height="36" rx="6" fill="#064e3b" stroke="#059669" stroke-width="1"/>
+    <text x="875" y="46" fill="#34d399" font-size="11" font-weight="700">✓ Biometric Consent Granted</text>
+    <text x="1040" y="46" fill="#6ee7b7" font-size="10">Valid 24h</text>
+
+    <!-- Insurance Coverage -->
+    <rect x="1100" y="24" width="220" height="36" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <text x="1115" y="46" fill="#fbbf24" font-size="11" font-weight="700">PM-JAY Gold Card:</text>
+    <text x="1235" y="46" fill="#ffffff" font-size="12">₹5,00,000</text>
+
+    <!-- Fast Action Buttons -->
+    <rect x="1560" y="22" width="130" height="40" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="1"/>
+    <text x="1580" y="46" fill="#38bdf8" font-size="12" font-weight="700">Scan QR Code</text>
+
+    <rect x="1705" y="22" width="115" height="40" rx="8" fill="#0284c7"/>
+    <text x="1722" y="46" fill="#ffffff" font-size="12" font-weight="700">FHIR Record</text>
+  </g>
+
+  <!-- Left Column: Past Multi-Hospital Visits & Longitudinal History -->
+  <g transform="translate(40, 265)">
+    <rect x="0" y="0" width="460" height="775" rx="16" fill="url(#docCardGrad)" stroke="#1e293b" stroke-width="1.5"/>
+
+    <text x="24" y="36" fill="#f8fafc" font-size="16" font-weight="700">Federated Multi-Hospital Visits</text>
+    <text x="24" y="56" fill="#64748b" font-size="11">Longitudinal care encounters retrieved from federated network nodes</text>
+
+    <!-- Encounter 1 (Selected - Active Today) -->
+    <g transform="translate(20, 75)">
+      <rect x="0" y="0" width="420" height="110" rx="10" fill="#0f172a" stroke="#38bdf8" stroke-width="2"/>
+      <rect x="0" y="0" width="420" height="26" rx="8" fill="#0284c7" fill-opacity="0.3"/>
+      <text x="14" y="18" fill="#38bdf8" font-size="11" font-weight="700">CURRENT ENCOUNTER • TODAY 10:15 AM</text>
+      <text x="360" y="18" fill="#34d399" font-size="10" font-weight="700">ACTIVE</text>
+      <text x="14" y="48" fill="#ffffff" font-size="14" font-weight="700">Govt Medical College Hospital</text>
+      <text x="14" y="66" fill="#94a3b8" font-size="11">Department: Pulmonology &amp; Triage • Ernakulam, KL</text>
+      <text x="14" y="86" fill="#f8fafc" font-size="11" font-weight="600">Chief Complaint: Dyspnea with nocturnal cough</text>
+      <text x="14" y="100" fill="#64748b" font-size="10">Attending: Dr. Ananya Nair • OPD Room 14</text>
+    </g>
+
+    <!-- Encounter 2 (Previous State Hospital - Ernakulam) -->
+    <g transform="translate(20, 200)">
+      <rect x="0" y="0" width="420" height="105" rx="10" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+      <text x="14" y="24" fill="#94a3b8" font-size="10" font-weight="700">12 NOV 2025 • GENERAL OPD</text>
+      <text x="350" y="24" fill="#64748b" font-size="10">RESOLVED</text>
+      <text x="14" y="48" fill="#ffffff" font-size="13" font-weight="700">General Hospital Ernakulam</text>
+      <text x="14" y="66" fill="#94a3b8" font-size="11">Diagnosis: Lumbar Sprain (Ergonomic trauma)</text>
+      <text x="14" y="84" fill="#cbd5e1" font-size="11">Rx: Aceclofenac, Diclofenac Gel, Bed Rest 3 Days</text>
+      <text x="14" y="98" fill="#64748b" font-size="10">Physician: Dr. Mathew Thomas • KL-MED-0921</text>
+    </g>
+
+    <!-- Encounter 3 (Transit State Hospital - Mumbai) -->
+    <g transform="translate(20, 320)">
+      <rect x="0" y="0" width="420" height="105" rx="10" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+      <text x="14" y="24" fill="#94a3b8" font-size="10" font-weight="700">08 FEB 2024 • RESPIRATORY CLINIC</text>
+      <text x="350" y="24" fill="#64748b" font-size="10">SYNCED</text>
+      <text x="14" y="48" fill="#ffffff" font-size="13" font-weight="700">Sion Municipal Hospital, Mumbai</text>
+      <text x="14" y="66" fill="#94a3b8" font-size="11">Diagnosis: Occupational Dust Rhinitis</text>
+      <text x="14" y="84" fill="#cbd5e1" font-size="11">Rx: Levocetirizine 5mg, Saline Nasal Spray</text>
+      <text x="14" y="98" fill="#64748b" font-size="10">Physician: Dr. Rajesh Kadam • MH-BMC-1184</text>
+    </g>
+
+    <!-- Encounter 4 (Origin State Hospital - Patna) -->
+    <g transform="translate(20, 440)">
+      <rect x="0" y="0" width="420" height="105" rx="10" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+      <text x="14" y="24" fill="#94a3b8" font-size="10" font-weight="700">22 MAY 2023 • PRIMARY INTAKE</text>
+      <text x="350" y="24" fill="#64748b" font-size="10">ORIGIN</text>
+      <text x="14" y="48" fill="#ffffff" font-size="13" font-weight="700">Patna Medical College Hospital, Bihar</text>
+      <text x="14" y="66" fill="#94a3b8" font-size="11">Clinical Baseline Health Registry &amp; Td Booster</text>
+      <text x="14" y="84" fill="#cbd5e1" font-size="11">Immunization completed, Baseline ECG normal</text>
+      <text x="14" y="98" fill="#64748b" font-size="10">Physician: Dr. Amit Verma • BR-DOH-0041</text>
+    </g>
+
+    <!-- Bottom summary box -->
+    <rect x="20" y="565" width="420" height="185" rx="10" fill="#0b1120" stroke="#1e293b" stroke-width="1"/>
+    <text x="36" y="592" fill="#38bdf8" font-size="13" font-weight="700">Inter-Hospital Medical Summary</text>
+    <text x="36" y="616" fill="#94a3b8" font-size="11">• Known Allergies: None Reported</text>
+    <text x="36" y="636" fill="#94a3b8" font-size="11">• Chronic Conditions: Mild Occupational Airway Disease</text>
+    <text x="36" y="656" fill="#94a3b8" font-size="11">• Past Surgeries: None</text>
+    <text x="36" y="676" fill="#94a3b8" font-size="11">• Immunizations: Tdap (2023), Hep-B (Complete)</text>
+    <text x="36" y="696" fill="#94a3b8" font-size="11">• Exposure: 8 yrs Masonry &amp; Cement handling</text>
+    <text x="36" y="726" fill="#34d399" font-size="11" font-weight="700">✓ All 4 records verified via National FHIR Mesh</text>
+  </g>
+
+  <!-- Center Column: Current Clinical Health Assessment -->
+  <g transform="translate(520, 265)">
+    <rect x="0" y="0" width="760" height="775" rx="16" fill="url(#docCardGrad)" stroke="#1e293b" stroke-width="1.5"/>
+
+    <text x="24" y="36" fill="#f8fafc" font-size="16" font-weight="700">Current Clinical Assessment (Examination &amp; Findings)</text>
+    <text x="24" y="56" fill="#64748b" font-size="11">Objective vitals, physical examination, symptom triage, and clinician notes</text>
+
+    <!-- Realtime Vitals Grid -->
+    <g transform="translate(24, 75)">
+      <!-- Vitals 1: Pulse -->
+      <rect x="0" y="0" width="165" height="85" rx="10" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+      <text x="14" y="24" fill="#94a3b8" font-size="10" font-weight="700">HEART RATE</text>
+      <text x="14" y="58" fill="#34d399" font-size="26" font-weight="800">78</text>
+      <text x="54" y="58" fill="#94a3b8" font-size="12">bpm</text>
+      <text x="14" y="74" fill="#34d399" font-size="10">● Regular Sinus</text>
+
+      <!-- Vitals 2: BP -->
+      <rect x="180" y="0" width="165" height="85" rx="10" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+      <text x="194" y="24" fill="#94a3b8" font-size="10" font-weight="700">BLOOD PRESSURE</text>
+      <text x="194" y="58" fill="#38bdf8" font-size="26" font-weight="800">124/80</text>
+      <text x="285" y="58" fill="#94a3b8" font-size="11">mmHg</text>
+      <text x="194" y="74" fill="#38bdf8" font-size="10">● Normotensive</text>
+
+      <!-- Vitals 3: SpO2 -->
+      <rect x="360" y="0" width="165" height="85" rx="10" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+      <text x="374" y="24" fill="#94a3b8" font-size="10" font-weight="700">OXYGEN (SPO2)</text>
+      <text x="374" y="58" fill="#fbbf24" font-size="26" font-weight="800">97%</text>
+      <text x="435" y="58" fill="#94a3b8" font-size="11">Room Air</text>
+      <text x="374" y="74" fill="#fbbf24" font-size="10">▲ Borderline desat on exertion</text>
+
+      <!-- Vitals 4: Temp -->
+      <rect x="540" y="0" width="165" height="85" rx="10" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+      <text x="554" y="24" fill="#94a3b8" font-size="10" font-weight="700">TEMPERATURE</text>
+      <text x="554" y="58" fill="#f8fafc" font-size="26" font-weight="800">98.4</text>
+      <text x="615" y="58" fill="#94a3b8" font-size="12">°F</text>
+      <text x="554" y="74" fill="#34d399" font-size="10">● Afebrile</text>
+    </g>
+
+    <!-- Physical Exam Section -->
+    <g transform="translate(24, 180)">
+      <text x="0" y="16" fill="#f8fafc" font-size="13" font-weight="700">Systemic &amp; Physical Examination</text>
+
+      <rect x="0" y="30" width="705" height="150" rx="10" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+      <text x="16" y="55" fill="#38bdf8" font-size="12" font-weight="700">Respiratory System:</text>
+      <text x="160" y="55" fill="#cbd5e1" font-size="12">Bilateral breath sounds vesicular. Mild end-expiratory polyphonic rhonchi noted at bilateral lung bases. No stridor or cyanosis.</text>
+
+      <text x="16" y="85" fill="#38bdf8" font-size="12" font-weight="700">Cardiovascular:</text>
+      <text x="160" y="85" fill="#cbd5e1" font-size="12">S1 S2 heard. No murmurs, rubs or gallops.</text>
+
+      <text x="16" y="115" fill="#38bdf8" font-size="12" font-weight="700">Musculoskeletal:</text>
+      <text x="160" y="115" fill="#cbd5e1" font-size="12">Full range of motion in spine, resolved lumbar tenderness from previous Nov 2025 strain.</text>
+
+      <text x="16" y="145" fill="#38bdf8" font-size="12" font-weight="700">Occupational Cutaneous:</text>
+      <text x="160" y="145" fill="#cbd5e1" font-size="12">Calloused palmar surfaces, dry skin, no active dermatological lesions or chemical ulcers.</text>
+    </g>
+
+    <!-- Clinical Impression / Diagnosis -->
+    <g transform="translate(24, 380)">
+      <text x="0" y="16" fill="#f8fafc" font-size="13" font-weight="700">Working Diagnosis (ICD-11 Coded)</text>
+
+      <rect x="0" y="30" width="705" height="110" rx="10" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+      <rect x="16" y="46" width="90" height="24" rx="4" fill="#0284c7" fill-opacity="0.3"/>
+      <text x="24" y="62" fill="#38bdf8" font-size="11" font-weight="700">CA20.0</text>
+      <text x="120" y="62" fill="#ffffff" font-size="13" font-weight="700">Occupational Asthma / Reactive Airway Dysfunction Syndrome</text>
+
+      <rect x="16" y="80" width="90" height="24" rx="4" fill="#f59e0b" fill-opacity="0.3"/>
+      <text x="24" y="96" fill="#fbbf24" font-size="11" font-weight="700">QC44</text>
+      <text x="120" y="96" fill="#cbd5e1" font-size="13">Workplace Dust &amp; Silica Particulate Exposure Hazard</text>
+
+      <text x="16" y="125" fill="#94a3b8" font-size="11">Severity Level: Moderate • Prognosis: Favorable with workplace PPE and bronchodilators.</text>
+    </g>
+
+    <!-- Doctor Clinical Notes Box -->
+    <g transform="translate(24, 540)">
+      <text x="0" y="16" fill="#f8fafc" font-size="13" font-weight="700">Physician Clinical Narrative &amp; Advice</text>
+      <rect x="0" y="30" width="705" height="120" rx="10" fill="#0b1120" stroke="#1e293b" stroke-width="1"/>
+      <text x="16" y="55" fill="#cbd5e1" font-size="12">"Patient presents with a 2-week history of nocturnal coughing fits, exacerbated following demolition work at the site.</text>
+      <text x="16" y="75" fill="#cbd5e1" font-size="12">Review of his past Mumbai Sion Hospital record indicates previous dust rhinitis episode. Initiated inhaled bronchodilator.</text>
+      <text x="16" y="95" fill="#cbd5e1" font-size="12">Advised occupational safety officer to provide N95 particulate respirator and rotate shift away from high-dust zone."</text>
+      <text x="16" y="120" fill="#34d399" font-size="11" font-weight="700">Audio Consultation Voice-to-Text Transcribed &amp; Translated to Malayalam/Hindi EHR logs.</text>
+    </g>
+
+    <!-- Bottom Actions -->
+    <rect x="24" y="710" width="220" height="42" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="50" y="736" fill="#cbd5e1" font-size="12" font-weight="600">Order Spirometry Test</text>
+
+    <rect x="260" y="710" width="220" height="42" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="285" y="736" fill="#cbd5e1" font-size="12" font-weight="600">Chest Radiograph (X-Ray)</text>
+  </g>
+
+  <!-- Right Column: e-Prescription & Care Plan -->
+  <g transform="translate(1300, 265)">
+    <rect x="0" y="0" width="580" height="775" rx="16" fill="url(#docCardGrad)" stroke="#1e293b" stroke-width="1.5"/>
+
+    <text x="24" y="36" fill="#f8fafc" font-size="16" font-weight="700">Digital e-Prescription (Rx) &amp; Care Directives</text>
+    <text x="24" y="56" fill="#64748b" font-size="11">Federated e-Prescription redeemable at all government &amp; empaneled pharmacies</text>
+
+    <!-- Rx Item 1 -->
+    <g transform="translate(24, 75)">
+      <rect x="0" y="0" width="532" height="95" rx="10" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+      <text x="16" y="26" fill="#38bdf8" font-size="14" font-weight="700">1. Budesonide + Formoterol Inhaler (200/6 mcg)</text>
+      <text x="16" y="48" fill="#cbd5e1" font-size="12">Dosage: 1 Puff twice daily via spacer for 30 days</text>
+      <rect x="16" y="60" width="120" height="20" rx="4" fill="#0284c7" fill-opacity="0.2"/>
+      <text x="24" y="74" fill="#38bdf8" font-size="10" font-weight="700">GOVT DISPENSARY FREE</text>
+      <text x="440" y="48" fill="#34d399" font-size="12" font-weight="700">Dispense: 1 Can</text>
+    </g>
+
+    <!-- Rx Item 2 -->
+    <g transform="translate(24, 185)">
+      <rect x="0" y="0" width="532" height="95" rx="10" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+      <text x="16" y="26" fill="#38bdf8" font-size="14" font-weight="700">2. Tab. Montelukast + Levocetirizine (10mg / 5mg)</text>
+      <text x="16" y="48" fill="#cbd5e1" font-size="12">Dosage: 1 tablet at bedtime (night) for 14 days</text>
+      <rect x="16" y="60" width="135" height="20" rx="4" fill="#0284c7" fill-opacity="0.2"/>
+      <text x="24" y="74" fill="#38bdf8" font-size="10" font-weight="700">ANTI-ALLERGIC COVER</text>
+      <text x="440" y="48" fill="#34d399" font-size="12" font-weight="700">Dispense: 14 Tabs</text>
+    </g>
+
+    <!-- Rx Item 3 -->
+    <g transform="translate(24, 295)">
+      <rect x="0" y="0" width="532" height="95" rx="10" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+      <text x="16" y="26" fill="#38bdf8" font-size="14" font-weight="700">3. Tab. Multivitamin with Zinc &amp; Vitamin D3</text>
+      <text x="16" y="48" fill="#cbd5e1" font-size="12">Dosage: 1 tablet daily after food for 30 days</text>
+      <rect x="16" y="60" width="135" height="20" rx="4" fill="#10b981" fill-opacity="0.2"/>
+      <text x="24" y="74" fill="#34d399" font-size="10" font-weight="700">NUTRITIONAL SUPPORT</text>
+      <text x="440" y="48" fill="#34d399" font-size="12" font-weight="700">Dispense: 30 Tabs</text>
+    </g>
+
+    <!-- Care Directives & Multilingual Instructions -->
+    <g transform="translate(24, 405)">
+      <text x="0" y="16" fill="#f8fafc" font-size="13" font-weight="700">Care Directives &amp; Audio Explainer</text>
+      <rect x="0" y="30" width="532" height="130" rx="10" fill="#0b1120" stroke="#1e293b" stroke-width="1"/>
+      <text x="16" y="55" fill="#cbd5e1" font-size="11">✓ Inhaler demonstration performed with multilingual video module.</text>
+      <text x="16" y="75" fill="#cbd5e1" font-size="11">✓ WhatsApp SMS with dosage audio guide sent in Hindi &amp; Malayalam.</text>
+      <text x="16" y="95" fill="#cbd5e1" font-size="11">✓ Workplace dust exposure notification issued to Employer Contractor.</text>
+      <text x="16" y="115" fill="#cbd5e1" font-size="11">✓ Scheduled Follow-up Review in 14 days (Auto-booked at Taluk Clinic).</text>
+      <text x="16" y="140" fill="#fbbf24" font-size="11" font-weight="700">Emergency SOS: Call 108 or tap SOS on Digital Health Pass if breathless.</text>
+    </g>
+
+    <!-- Clinician Digital Signature & Interop Audit -->
+    <g transform="translate(24, 580)">
+      <rect x="0" y="0" width="532" height="95" rx="10" fill="#0f172a" stroke="#10b981" stroke-width="1"/>
+      <text x="16" y="24" fill="#34d399" font-size="11" font-weight="700">CRYPTOGRAPHIC DIGITAL SIGNATURE (e-Sign 3.0)</text>
+      <text x="16" y="46" fill="#ffffff" font-size="12" font-weight="600">Signed by: Dr. Ananya Nair, MD (Pulmonology)</text>
+      <text x="16" y="64" fill="#94a3b8" font-size="10">Cert Authority: e-Mudhra Medical Council of India • Timestamp: 2026-10-27 10:42 UTC</text>
+      <text x="16" y="80" fill="#64748b" font-size="10">FHIR R4 Bundle Hash: SHA256:d8a4f912c3... • ABHA Synced</text>
+    </g>
+
+    <!-- Save & Complete Consultation CTA -->
+    <g transform="translate(24, 695)">
+      <rect x="0" y="0" width="532" height="55" rx="10" fill="url(#saveBtnGrad)"/>
+      <text x="120" y="34" fill="#ffffff" font-size="15" font-weight="800">COMPLETE ENCOUNTER &amp; SYNC TO MESH</text>
+    </g>
+  </g>
+</svg>
